@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'methodikos-demo';
+  title = 'infraframe-demo';
+
+  logout() {
+    window.location.href = 'https://infraframe.com/';
+  }
 }
