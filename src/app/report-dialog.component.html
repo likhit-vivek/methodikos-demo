@@ -1,0 +1,82 @@
+<p class="bg-grey px-2 py-1 d-flex align-items-center justify-content-between border mb-0 fs-13">
+    PDF
+    <i (click)="close()" class="fas fa-times fs-13 mr-2 text-grey cursor-pointer"></i>
+</p>
+<div class="px-3 py-1 mh-50-vh scroll-y">
+    <p class="fs-12 mb-1"><b>Summary</b></p>
+    <div class="px-3 fs-11">
+        <p class="d-flex align-items-center justify-content-between mb-0">
+            <span>Year</span>
+            <span>2017 - 2020</span>
+        </p>
+        <mat-divider class="my-2"></mat-divider>
+        <p class="d-flex align-items-center justify-content-between mb-0">
+            <span>District</span>
+            <span>College Station</span>
+        </p>
+        <mat-divider class="my-2"></mat-divider>
+        <p class="d-flex align-items-center justify-content-between mb-0">
+            <span>Total Lane-Miles</span>
+            <span>790.29444</span>
+        </p>
+        <mat-divider class="my-2"></mat-divider>
+        <p class="d-flex align-items-center justify-content-between mb-0">
+            <span>Total Number of Management Section</span>
+            <span>733</span>
+        </p>
+        <mat-divider class="my-2"></mat-divider>
+        <p class="d-flex align-items-center justify-content-between mb-0">
+            <span>Total Budget Available (million)</span>
+            <span>16</span>
+        </p>
+        <mat-divider class="my-2"></mat-divider>
+    </div>
+    <p class="fs-12 mb-1"><b>Network Management Plan</b></p>
+    <div class="row px-3 fs-12">
+        <div class="col-6 border border-grey d-flex align-items-center justify-content-center btlr-6">Summary of Projects</div>
+        <div class="col-6 border border-grey text-center px-2 py-1 btrr-6">
+            <button type="button" class="btn btn-sm bg-grey w-100 h-100 fs-12">View</button>
+        </div>
+        <div class="col-6 border border-grey d-flex align-items-center justify-content-center">Detailed List of Funded Projects</div>
+        <div class="col-6 border border-grey text-center px-2 py-1">
+            <button type="button" class="btn btn-sm bg-grey w-100 h-100 fs-12">View</button>
+        </div>
+        <div class="col-6 border border-grey d-flex align-items-center justify-content-center bblr-6">Network Condition</div>
+        <div class="col-6 border border-grey text-center px-2 py-1 bbrr-6">
+            <button type="button" class="btn btn-sm bg-grey w-100 h-100 fs-12">View</button>
+        </div>
+    </div>
+    <div class="row px-3 fs-12">
+        <div class="col-12 text-right px-0 py-2">
+            <button type="button" (click)="downloadLink('workplan')" class="btn btn-sm bg-grey fs-12 px-3 py-0 mr-3">Work Plan</button>
+            <button type="button" (click)="downloadLink('networkreport')" class="btn btn-sm bg-grey fs-12 px-3 py-0">Network Report</button>
+        </div>
+    </div>
+    <p class="fs-12 mb-1"><b>Segment Management Plan</b></p>
+    <div class="row px-3 fs-12 no-gutters">
+        <div class="col-5 d-flex align-items-center justify-content-end pr-2 pb-2">Highway: </div>
+        <div class="col-7 pb-2">
+            <select class="w-100 py-1 fs-12 border-grey bg-white">
+                <option>12th MAN CIRCLE</option>
+                <option>ABBEY LANE</option>
+                <option>ABERCORN LANE</option>
+                <option>ABERDEEN PLACE</option>
+                <option>ACCESS EASEMENT</option>
+            </select>
+        </div>
+        <div class="col-5 d-flex align-items-center justify-content-end pr-2 pb-2">Beginning/Ending Ref. Marker: </div>
+        <div class="col-7 pb-2">
+            <select class="w-100 py-1 fs-12 border-grey">
+                <option>357180910185319.00 / 357178510185270.00</option>
+                <option>357185710185477.00 / 357180910185319.00</option>
+                <option>357190410185455.00 / 357180910185319.00</option>
+            </select>
+        </div>
+        <div class="col-12 text-right">
+            <button type="button" (click)="downloadLink('segmentreport')" class="btn btn-sm bg-grey fs-12 px-3 py-0">Segment Report</button>
+        </div>
+    </div>
+    <div class="col-12 text-right my-3">
+        <button type="button" (click)="close()" class="btn btn-sm bg-grey fs-12 px-5">Cancel</button>
+    </div>
+</div>
