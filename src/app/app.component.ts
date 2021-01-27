@@ -34,6 +34,13 @@ export class AppComponent {
     });
   }
 
+  openDataCleaningDialog() {
+    const dialogRef = this.dialog.open(DataCleaningDialogComponent, {
+      'width': '450px',
+      autoFocus: false,
+    });
+  }
+
   logout() {
     window.location.href = 'https://infraframe.com/';
   }
@@ -99,6 +106,25 @@ export class PciAnalysisDialogComponent {
 export class IriAnalysisDialogComponent {
   constructor(
     public dialogRef: MatDialogRef<IriAnalysisDialogComponent>,
+  ) {
+    this.dialogRef.backdropClick().subscribe(_ => {
+      this.close();
+    });
+  }
+
+  close() {
+    this.dialogRef.close();
+  }
+}
+
+@Component({
+  selector: 'data-cleaning-dialog',
+  templateUrl: './data-cleaning-dialog.component.html',
+  styleUrls: ['./data-cleaning-dialog.component.sass', './app.component.sass']
+})
+export class DataCleaningDialogComponent {
+  constructor(
+    public dialogRef: MatDialogRef<DataCleaningDialogComponent>,
   ) {
     this.dialogRef.backdropClick().subscribe(_ => {
       this.close();

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent, IriAnalysisDialogComponent, PciAnalysisDialogComponent, ReportDialogComponent } from './app.component';
+import { AppComponent, DataCleaningDialogComponent, IriAnalysisDialogComponent, PciAnalysisDialogComponent, ReportDialogComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule, MatDividerModule } from '@angular/material';
 
@@ -11,6 +11,7 @@ import { MatDialogModule, MatDividerModule } from '@angular/material';
     ReportDialogComponent,
     PciAnalysisDialogComponent,
     IriAnalysisDialogComponent,
+    DataCleaningDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,6 +23,7 @@ import { MatDialogModule, MatDividerModule } from '@angular/material';
     ReportDialogComponent,
     PciAnalysisDialogComponent,
     IriAnalysisDialogComponent,
+    DataCleaningDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
