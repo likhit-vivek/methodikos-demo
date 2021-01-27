@@ -13,6 +13,20 @@ export class AppComponent {
     public dialog: MatDialog
   ) {}
 
+  openPciAnalysisDialog() {
+    const dialogRef = this.dialog.open(PciAnalysisDialogComponent, {
+      'width': '500px',
+      autoFocus: false,
+    });
+  }
+
+  openIriAnalysisDialog() {
+    const dialogRef = this.dialog.open(IriAnalysisDialogComponent, {
+      'width': '500px',
+      autoFocus: false,
+    });
+  }
+
   openReportDialog() {
     const dialogRef = this.dialog.open(ReportDialogComponent, {
       'width': '500px',
@@ -51,6 +65,44 @@ export class ReportDialogComponent {
     if(param == 'segmentreport') var win = window.open(this.segmentReportLink, "_blank");
     if(param == 'csv') var win = window.open(this.csvLink, "_blank");
     win.focus();
+  }
+
+  close() {
+    this.dialogRef.close();
+  }
+}
+
+@Component({
+  selector: 'pci-analysis-dialog',
+  templateUrl: './pci-analysis-dialog.component.html',
+  styleUrls: ['./pci-analysis-dialog.component.sass', './app.component.sass']
+})
+export class PciAnalysisDialogComponent {
+  constructor(
+    public dialogRef: MatDialogRef<PciAnalysisDialogComponent>,
+  ) {
+    this.dialogRef.backdropClick().subscribe(_ => {
+      this.close();
+    });
+  }
+
+  close() {
+    this.dialogRef.close();
+  }
+}
+
+@Component({
+  selector: 'iri-analysis-dialog',
+  templateUrl: './iri-analysis-dialog.component.html',
+  styleUrls: ['./iri-analysis-dialog.component.sass', './app.component.sass']
+})
+export class IriAnalysisDialogComponent {
+  constructor(
+    public dialogRef: MatDialogRef<IriAnalysisDialogComponent>,
+  ) {
+    this.dialogRef.backdropClick().subscribe(_ => {
+      this.close();
+    });
   }
 
   close() {

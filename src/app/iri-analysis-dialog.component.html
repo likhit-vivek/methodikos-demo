@@ -1,0 +1,42 @@
+<p class="bg-grey px-2 py-1 d-flex align-items-center justify-content-between border mb-0 fs-13">
+    Set Analysis Options
+    <i (click)="close()" class="fas fa-times fs-13 mr-2 text-grey cursor-pointer"></i>
+</p>
+<div class="px-3 py-1 mh-50-vh scroll-y">
+    <p class="fs-12 mb-1"><b>Performance Prediction Modeling Parameters:</b></p>
+    <div class="row px-3 fs-11">
+        <div class="col-7 border border-grey d-flex align-items-center justify-content-center btlr-6">IRI Prediction Model</div>
+        <div class="col-5 border border-grey text-center px-1 py-1 btrr-6">
+            <button type="button" class="btn btn-sm bg-grey w-100 h-100 fs-12">Edit</button>
+        </div>
+        <div class="col-7 border border-grey d-flex align-items-center justify-content-center bblr-6">Gain in Ratings Due to M&R</div>
+        <div class="col-5 border border-grey text-center px-1 py-1 bbrr-6">
+            <button type="button" class="btn btn-sm bg-grey w-100 h-100 fs-12">Edit</button>
+        </div>
+    </div>
+    <p class="fs-12 mb-1 mt-2"><b>Other Parameters</b></p>
+    <div class="row px-3 fs-11">
+        <div class="col-7 border border-grey d-flex align-items-center justify-content-center btlr-6 fs-10">Performance Benefit Parameters & M&R Triggers</div>
+        <div class="col-5 border border-grey text-center px-1 py-1 btrr-6">
+            <button type="button" class="btn btn-sm bg-grey w-100 h-100 fs-12">Edit</button>
+        </div>
+        <div class="col-7 border border-grey d-flex align-items-center justify-content-center">AHP Weights</div>
+        <div class="col-5 border border-grey text-center px-1 py-1">
+            <button type="button" class="btn btn-sm bg-grey w-100 h-100 fs-12">Edit</button>
+        </div>
+        <div class="col-7 border border-grey d-flex align-items-center justify-content-center">Unit Cost</div>
+        <div class="col-5 border border-grey text-center px-1 py-1">
+            <button type="button" class="btn btn-sm bg-grey w-100 h-100 fs-12">Edit</button>
+        </div>
+        <div class="col-7 border border-grey d-flex align-items-center justify-content-center bblr-6">Other Parameters</div>
+        <div class="col-5 border border-grey text-center px-1 py-1 bbrr-6">
+            <button type="button" class="btn btn-sm bg-grey w-100 h-100 fs-12">Edit</button>
+        </div>
+    </div>
+    <div class="row px-3 fs-12">
+        <div class="col-12 text-right px-0 py-2">
+            <button type="button" class="btn btn-sm bg-grey fs-12 px-3 py-0 mr-3">Start Analysis</button>
+            <button type="button" class="btn btn-sm bg-grey fs-12 px-3 py-0">Cancel</button>
+        </div>
+    </div>
+</div>

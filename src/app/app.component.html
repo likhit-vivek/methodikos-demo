@@ -27,8 +27,8 @@
         <div class="dropdown">
           <span data-toggle="dropdown" class="px-3 py-1 br-6 fs-13 text-white cursor-pointer hover-orange">Analysis <i class="fas fa-caret-down"></i></span>
           <ul class="dropdown-menu w-250 bg-black-glass p-1">
-            <li class="px-3 py-1 br-6 fs-13 text-white cursor-pointer hover-blue">PCI Analysis</li>
-            <li class="px-3 py-1 br-6 fs-13 text-white cursor-pointer hover-blue">IRI Analysis</li>
+            <li class="px-3 py-1 br-6 fs-13 text-white cursor-pointer hover-blue" (click)="openPciAnalysisDialog()">PCI Analysis</li>
+            <li class="px-3 py-1 br-6 fs-13 text-white cursor-pointer hover-blue" (click)="openIriAnalysisDialog()">IRI Analysis</li>
           </ul>
         </div>
         <span class="px-3 py-1 br-6 fs-13 text-white cursor-pointer hover-blue" (click)="openReportDialog()">Report</span>
